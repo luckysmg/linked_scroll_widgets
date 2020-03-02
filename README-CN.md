@@ -145,13 +145,13 @@ class _LinkedOffsetPageState extends State<LinkedOffsetPage> {
 }
 
 ```
-## 由于透明度变换常常和AppBar关联，索性封装了两个组件，开箱即用
-- LinkedOpacityNavigationBar （cupertino风格）
+## 由于透明度变换常常和AppBar关联，除了上述三个组件，索性还封装了两个组件，开箱即用
+- LinkedOpacityNavigationBar （iOS风格）
 - LinkedOpacityAppBar （material风格）
 
-## 参数说明：toggleOffsetY
-
-- 首先此包中的组件都包含这个属性，那什么是toggleOffsetY？
+## 参数说明：
+- toggleOffsetY 
+ 首先此包中的组件都包含这个属性，那什么是toggleOffsetY？
  这个是一个滚动的临界值，当你的滚动明组件（如listView）的滚动offset达到了这个值，你的相关联的UI效果也会达到边界值
  
  这里以上面 LinkedOpacityPage 中的例子为例，

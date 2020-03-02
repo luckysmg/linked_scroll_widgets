@@ -150,15 +150,15 @@ class _LinkedOffsetPageState extends State<LinkedOffsetPage> {
 - LinkedOpacityNavigationBar （iOS style）
 - LinkedOpacityAppBar （material style）
 
-## parameter guide：toggleOffsetY
-
- 
--First,the widgets in this lib have this parameter,so you may think that what is toggleOffsetY? 
+## parameter guide：
+- toggleOffsetY 
+First,the widgets in this lib have this parameter,so you may think that what is toggleOffsetY? 
 Let me take an example using the example page call LinkedOpacityPage (just above ,the first GIF)
 When the offsetY of your listView is 0(initialOffset) you can't see the title text on top navigationBar
 and, when the offsetY = toggleOffset Y ,the title text is visible completely,it a linear change.
 In other words,when offsetY = 0 ,the opacity = 0,and when offset = toggleOffset,the opacity = 1.0;
 All in all,the faster you want to change your UI effect,the smaller toggleOffsetY you should set;
+ 
 
  
 

@@ -51,6 +51,7 @@ class _LinkedOpacityPageState extends State<LinkedOpacityPage> {
 ```
 
 - LinkedSizeWidget:
+
 ![](https://github.com/luckysmg/linked_scroll_widgets/blob/master/gifImage/size.gif)
 
 ```dart
@@ -102,6 +103,7 @@ class _LinkedSizePageState extends State<LinkedSizePage> {
 ```
 
 - LinkedOffsetWidget:
+
 ![](https://github.com/luckysmg/linked_scroll_widgets/blob/master/gifImage/offset.gif)
 
 ```dart

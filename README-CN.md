@@ -3,7 +3,7 @@ Language: [English](https://github.com/luckysmg/linked_scroll_widgets/blob/maste
 
 # linked_scroll_widgets
 
-一个可以和scrollController交互的一个组件库
+一个可以和滚动组件交互的一个widget库
 
 ## 别的不说，直接上例子
 

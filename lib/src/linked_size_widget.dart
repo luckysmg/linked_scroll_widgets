@@ -10,7 +10,7 @@ typedef OnSizeChanged = Function(double height, double width);
 class LinkedSizeWidget extends StatefulWidget {
   final Widget child;
   final ScrollController scrollController;
-  final double toggleOffset;
+  final double toggleOffsetY;
   final double originalHeight;
   final double finalHeight;
   final double originalWidth;
@@ -27,7 +27,7 @@ class LinkedSizeWidget extends StatefulWidget {
     @required this.child,
     this.originalWidth,
     this.finalWidth,
-    this.toggleOffset = kDefaultToggleOffset,
+    this.toggleOffsetY = kDefaultToggleOffset,
     this.originalHeight,
     this.finalHeight,
     this.alignment = Alignment.center,
@@ -51,11 +51,11 @@ class _LinkedSizeWidgetState extends State<LinkedSizeWidget>
     listener = () {
       if (widget.originalWidth != null && widget.finalWidth != null) {
         currentWidth = Util.computeSize(widget.scrollController,
-            widget.toggleOffset, widget.originalWidth, widget.finalWidth);
+            widget.toggleOffsetY, widget.originalWidth, widget.finalWidth);
       }
       if (widget.originalHeight != null && widget.finalHeight != null) {
         currentHeight = Util.computeSize(widget.scrollController,
-            widget.toggleOffset, widget.originalHeight, widget.finalHeight);
+            widget.toggleOffsetY, widget.originalHeight, widget.finalHeight);
       }
       if (widget.onSizeChanged != null) {
         widget.onSizeChanged(currentHeight, currentWidth);

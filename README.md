@@ -1,10 +1,15 @@
+Language: [English](https://github.com/luckysmg/linked_scroll_widgets/blob/master/README.md) | [中文简体](https://github.com/luckysmg/linked_scroll_widgets/blob/master/README-CN.md)
+
+
 # linked_scroll_widgets
 
 A lib full of widgets that can react to the scrollController's offset change,to custom your UI effect.
 
 ## Get started with an simple example:
 
-LinkedOpacityWidget:
+- LinkedOpacityWidget:
+
+![](https://github.com/luckysmg/linked_scroll_widgets/blob/master/gifImage/opacity.gif)
 ```dart
 class LinkedOpacityPage extends StatefulWidget {
   @override
@@ -45,7 +50,9 @@ class _LinkedOpacityPageState extends State<LinkedOpacityPage> {
 }
 ```
 
-LinkedSizeWidget:
+- LinkedSizeWidget:
+![](https://github.com/luckysmg/linked_scroll_widgets/blob/master/gifImage/size.gif)
+
 ```dart
 class LinkedSizePage extends StatefulWidget {
   @override
@@ -94,7 +101,9 @@ class _LinkedSizePageState extends State<LinkedSizePage> {
 }
 ```
 
-LinkedOffsetWidget:
+- LinkedOffsetWidget:
+![](https://github.com/luckysmg/linked_scroll_widgets/blob/master/gifImage/offset.gif)
+
 ```dart
 class LinkedOffsetPage extends StatefulWidget {
   @override
@@ -137,7 +146,22 @@ class _LinkedOffsetPageState extends State<LinkedOffsetPage> {
 ```
 
 
+## Because the appBar's opacity is often linked with scroll widgets to do some UI effects, so I make widget directly for you to use conveniently.
+- LinkedOpacityNavigationBar （iOS style）
+- LinkedOpacityAppBar （material style）
+
+## parameter guide：toggleOffsetY
+
+ 
+-First,the widgets in this lib have this parameter,so you may think that what is toggleOffsetY? 
+Let me take an example using the example page call LinkedOpacityPage (just above ,the first GIF)
+When the offsetY of your listView is 0(initialOffset) you can't see the title text on top navigationBar
+and, when the offsetY = toggleOffset Y ,the title text is visible completely,it a linear change.
+In other words,when offsetY = 0 ,the opacity = 0,and when offset = toggleOffset,the opacity = 1.0;
+All in all,the faster you want to change your UI effect,the smaller toggleOffsetY you should set;
+
+ 
 
 
-[package](https://flutter.dev/developing-packages/),
+
 

@@ -11,12 +11,13 @@ import 'util.dart';
 ///因为根据滑动来设置appBar的透明度比较常见，索性直接做一个开箱即用的吧^_^
 ///
 
-///with  Material style appbar if you want cupertino style please use [LinkedOpacityNavigationBar]
+///Material style appbar with linked opacity widget.
+///if you want iOS style please use [LinkedOpacityNavigationBar]
 /// 这是谷歌风格的，如果想要苹果风格的移步 [LinkedOpacityNavigationBar]
 class LinkedOpacityAppBar extends StatelessWidget
     implements PreferredSizeWidget {
   final ScrollController scrollController;
-  final double toggleOffset;
+  final double toggleOffsetY;
   final Widget title;
   final List<Widget> actions;
   final Widget leading;
@@ -40,7 +41,7 @@ class LinkedOpacityAppBar extends StatelessWidget
     @required this.scrollController,
     this.title,
     this.actions,
-    this.toggleOffset = kDefaultToggleOffset,
+    this.toggleOffsetY = kDefaultToggleOffset,
     this.automaticallyImplyLeading = true,
     this.flexibleSpace,
     this.backgroundColor = Colors.white,
@@ -62,7 +63,7 @@ class LinkedOpacityAppBar extends StatelessWidget
   Widget build(BuildContext context) {
     return LinkedOpacityWidget(
       scrollController: scrollController,
-      toggleOffsetY: toggleOffset,
+      toggleOffsetY: toggleOffsetY,
       initOpacity: initOpacity,
       onOpacityChanged: onOpacityChanged,
       child: AppBar(

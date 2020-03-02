@@ -22,7 +22,8 @@ const Border _kDefaultNavBarBorder = Border(
 ///因为根据滑动来设置appBar的透明度比较常见，索性直接做一个开箱即用的吧^_^
 ///
 
-///if you want cupertino style please use [LinkedOpacityAppBar]
+/// iOS style navigationBar with linked opacity widget
+///if you want material style please use [LinkedOpacityAppBar]
 /// 这是苹果风格的，如果想要谷歌风格的移步 [LinkedOpacityAppBar]
 class LinkedOpacityNavigationBar extends StatelessWidget
     implements ObstructingPreferredSizeWidget {

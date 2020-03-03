@@ -160,8 +160,16 @@ When the offsetY of your listView is 0(initialOffset) you can't see the title te
 and, when the offsetY = toggleOffset Y ,the title text is visible completely,it a linear change.
 In other words,when offsetY = 0 ,the opacity = 0,and when offset = toggleOffset,the opacity = 1.0;
 All in all,the faster you want to change your UI effect,the smaller toggleOffsetY you should set;
- 
 
+## FAQ
+- When I push a page ,which has a LinkedOffsetWidget or LinkedOpacityWidget in the CupertinoNavigationBar,the effect is strange
+
+Solution:Set parameter "transitionBetweenRoute" to false.
+
+
+ 
+## My other packages：
+ [jr_extension](https://pub.dev/packages/jr_extension)
  
 
 

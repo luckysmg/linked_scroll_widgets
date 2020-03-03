@@ -56,7 +56,7 @@ class LinkedOpacityNavigationBar extends StatelessWidget
     this.automaticallyImplyMiddle = true,
     this.padding,
     this.previousPageTitle,
-    this.transitionBetweenRoutes = true,
+    this.transitionBetweenRoutes = false,
     this.border = _kDefaultNavBarBorder,
   }) : super(key: key);
 

@@ -1,6 +1,6 @@
 name: linked_scroll_widgets
 description: A Flutter package with widgets that will react the scrollController's current offset.It can work on opacity,offset,and size.
-version: 0.0.1
+version: 0.1.0
 homepage: https://github.com/luckysmg/linked_scroll_widgets
 
 environment:

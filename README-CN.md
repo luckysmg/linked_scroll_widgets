@@ -164,6 +164,15 @@ class _LinkedOffsetPageState extends State<LinkedOffsetPage> {
  一句话来说，如果你想要你的UI效果变化的快，就把 toggleOffsetY设定得越小即可(toggleOffsetY > 0).
  
  
+## FAQ
+- 当我push一个新页面，这个页面的导航栏是用CupertinoNavigationBar制作的，里面可能包含LinkedOffsetWidget或者LinkedOpacityWidget,在页面动画过程中效果很奇怪怎么办：
+解决方法：将CupertinoNavigationBar中的"transitionBetweenRoute" 参数设置为false即可
+
+
+## 我的其他包：
+ [jr_extension](https://pub.dev/packages/jr_extension)
+ 
+ 
  
 
 

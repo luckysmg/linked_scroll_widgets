@@ -1,10 +1,5 @@
 Language: [English](https://github.com/luckysmg/linked_scroll_widgets/blob/master/README.md) | [中文简体](https://github.com/luckysmg/linked_scroll_widgets/blob/master/README-CN.md)
 
-#### 我的其他作品：
- [jr_extension](https://pub.dev/packages/jr_extension)
- 
- [flutter_swipe_action_cell](https://pub.dev/packages/flutter_swipe_action_cell)
-
  
 
 # linked_scroll_widgets
@@ -173,6 +168,12 @@ class _LinkedOffsetPageState extends State<LinkedOffsetPage> {
 ## FAQ
 - 当我push一个新页面，这个页面的导航栏是用CupertinoNavigationBar制作的，里面可能包含LinkedOffsetWidget或者LinkedOpacityWidget,在页面动画过程中效果很奇怪怎么办：
 解决方法：将CupertinoNavigationBar中的"transitionBetweenRoute" 参数设置为false即可
+
+
+# 我的其他作品：
+ [jr_extension](https://pub.dev/packages/jr_extension)
+ 
+ [flutter_swipe_action_cell](https://pub.dev/packages/flutter_swipe_action_cell)
 
 
 

@@ -1,5 +1,11 @@
 Language: [English](https://github.com/luckysmg/linked_scroll_widgets/blob/master/README.md) | [中文简体](https://github.com/luckysmg/linked_scroll_widgets/blob/master/README-CN.md)
 
+#### 我的其他作品：
+ [jr_extension](https://pub.dev/packages/jr_extension)
+ 
+ [flutter_swipe_action_cell](https://pub.dev/packages/flutter_swipe_action_cell)
+
+ 
 
 # linked_scroll_widgets
 
@@ -169,8 +175,7 @@ class _LinkedOffsetPageState extends State<LinkedOffsetPage> {
 解决方法：将CupertinoNavigationBar中的"transitionBetweenRoute" 参数设置为false即可
 
 
-## 我的其他包：
- [jr_extension](https://pub.dev/packages/jr_extension)
+
  
  
  
